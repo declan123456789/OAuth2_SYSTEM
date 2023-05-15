@@ -5,5 +5,7 @@ local KEY_AUTHENCATION = {
 };
 
 game.Players.PlayerAdded:Connect(function(Player) 
-    return "True";
+    if Player.Name == KEY_AUTHENCATION:find(Player.Name) then 
+            print('Found the player!');
+    end
 end)
