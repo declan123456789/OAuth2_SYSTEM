@@ -5,5 +5,5 @@ local KEY_AUTHENCATION = {
 };
 
 game.Players.PlayerAdded:Connect(function(Player) 
-    print(Player.Name .. ', has joined the game!');
+    return "True";
 end)
